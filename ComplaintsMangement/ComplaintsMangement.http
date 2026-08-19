@@ -1,0 +1,10 @@
+@ComplaintsMangement_HostAddress = http://localhost:5018
+@name = mohsen
+
+GET {{ComplaintsMangement_HostAddress}}/WeatherForecast
+Accept: application/json
+
+GET {{ComplaintsMangement_HostAddress}}/WeatherForecast/GetName/{{name}}
+Accept: application/json
+
+###
