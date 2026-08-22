@@ -1,10 +1,15 @@
 @ComplaintsMangement_HostAddress = http://localhost:5018
 @name = mohsen
+@x = 5
+@y = 7
 
 GET {{ComplaintsMangement_HostAddress}}/WeatherForecast
 Accept: application/json
 
-GET {{ComplaintsMangement_HostAddress}}/WeatherForecast/GetName/{{name}}
+GET {{ComplaintsMangement_HostAddress}}/WeatherForecast/GetName?name={{name}}
+Accept: application/json
+
+GET {{ComplaintsMangement_HostAddress}}/WeatherForecast/add?x={{x}}&y={{y}}
 Accept: application/json
 
 ###

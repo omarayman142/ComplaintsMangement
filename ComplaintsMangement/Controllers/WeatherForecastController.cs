@@ -32,5 +32,10 @@ namespace ComplaintsMangement.Controllers
         {
            return  name + " The Great";
         }
+        [HttpGet("add")]
+        public int Add(int x, int y)
+        {
+            return x + y;
+        }
     }
 }
